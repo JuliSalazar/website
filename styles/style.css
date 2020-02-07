@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Rosario&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.container{
+    font-family: Rosario;
+font-style: normal;
+font-weight: normal;
+}
