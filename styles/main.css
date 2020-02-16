@@ -12,9 +12,50 @@
   font-weight: normal;
 }
 
+.container__header {
+  background-color: black;
+}
+
+.icon-menu {
+  width: 50px;
+  margin: 15px;
+  float: right;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.icon-menu:active ~ .nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav {
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  margin-top: 100px;
+  position: absolute;
+  background: rgba(24, 24, 24, 0.9);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
 .nav__link {
   text-decoration: none;
+  display: block;
+  padding: 20px;
+  padding-left: 40px;
   color: white;
-  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav__link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.container__main img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */
