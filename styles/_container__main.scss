@@ -1,5 +1,30 @@
-.container__main img{
-    width:100%;
-    height:100%;
-    z-index: 0;
+.container__main{
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/imgBanner.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    justify-content: center;
+}
+.container__mainInfo{
+    position: relative;
+    top: 73%;
+    margin: 0px auto;
+    color:white;
+    text-align: center;
+    width: 300px;
+    &__h2{
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+}
+.button{
+    margin: 15px;
+    border: 0px;
+    background: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
 }
