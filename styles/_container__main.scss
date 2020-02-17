@@ -7,7 +7,7 @@
     position: absolute;
     justify-content: center;
 }
-.container__mainInfo{
+.container__main-info{
     position: relative;
     top: 73%;
     margin: 0px auto;
@@ -15,6 +15,7 @@
     text-align: center;
     width: 300px;
     &__h2{
+        font-weight: bold;
         margin-bottom: 5px;
         text-transform: uppercase;
     }

@@ -6,9 +6,14 @@
     font-family: Rosario;
     font-style: normal;
     font-weight: normal;
-    
+  
 }
-
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
 @import "container__header";
 @import "container__main";
+@import "container__footer";
+
