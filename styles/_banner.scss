@@ -1,13 +1,12 @@
-.container__main{
+.banner{
     width: 100%;
-    height: 100%;
+    height: 600px;
     background-image: url("/src/imgBanner.png");
     background-position: center;
     background-size: cover;
-    position: absolute;
     justify-content: center;
 }
-.container__main-info{
+.banner__info{
     position: relative;
     top: 73%;
     margin: 0px auto;
@@ -20,12 +19,4 @@
         text-transform: uppercase;
     }
 }
-.button{
-    margin: 15px;
-    border: 0px;
-    background: rgba(255, 255, 255, 0.95);
-    letter-spacing: 0.17em;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px 20px;
-}
+

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rosario&display=swap');
+
+$primary-color: #050505;
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,12 +12,17 @@
     font-weight: normal;
   
 }
-.container{
-    display: flex;
-    flex-direction: column;
+.button{
+    margin: 15px;
+    border: 0px;
+    background: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 
-@import "container__header";
-@import "container__main";
-@import "container__footer";
+@import "_header";
+@import "_banner";
+@import "_footer";
 

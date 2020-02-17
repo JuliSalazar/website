@@ -1,0 +1,39 @@
+.header{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    height: 100px;
+    &__nav{
+        display: inline-block;
+        width:70%;
+        height: 100%;
+        position: fixed;
+        padding-top: 100px; 
+        background: rgba(24, 24, 24, 0.9);
+        transform: translateX(-100%);
+    }
+    &__link{
+        text-decoration: none;
+        display: block;
+        padding: 25px;
+        padding-left: 30px;
+        color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(255, 255, 255,0.3);
+    }
+    &__link:hover{
+        background: rgba(255, 255, 255,0.2);
+    }
+}
+.icon-menu{
+    width: 50px;
+    margin: 15px;
+    float: right;
+    cursor: pointer;
+}
+.icon-menu hr{
+    border: 2px solid white;
+    margin: 10px auto;
+}
+.icon-menu:active ~ .header__nav{
+    transform: translateX(42.9%);
+}
