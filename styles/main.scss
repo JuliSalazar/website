@@ -2,6 +2,9 @@
 
 $primary-color: #1A1A1A;
 $secondary-color: #050505;
+$third-color: #EFEFEF;
+
+$breakpoint-web: 850px;
 
 
 *{
@@ -22,9 +25,15 @@ $secondary-color: #050505;
     font-weight: bold;
     padding: 10px 20px;
 }
+h2{
+    font-weight: bold;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+}
 
 @import 'header';
 @import 'banner';
+@import 'caracteristics';
 @import 'aptitudes';
 @import 'footer';
 

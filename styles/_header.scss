@@ -11,7 +11,19 @@
         padding-top: 100px; 
         background: rgba(24, 24, 24, 0.9);
         transform: translateX(-100%);
+        &--mobile {
+            transform: translateX(42.9%);
+        }
+        @media (min-width: $breakpoint-web){
+            transform: translateX(0%);
+            width: 100%;
+            background: transparent;
+            position: relative;
+            padding-top: 0px; 
+            margin-right: 0 auto;
+        }
     }
+    
     &__link{
         text-decoration: none;
         display: block;
@@ -19,7 +31,12 @@
         padding-left: 30px;
         color: rgb(255, 255, 255);
         border-bottom: 1px solid rgba(255, 255, 255,0.3);
+        @media (min-width: $breakpoint-web){
+            display: inline-block;
+            border-bottom: 0px;
+        }
     }
+    
     &__link:hover{
         background: rgba(255, 255, 255,0.2);
     }
@@ -29,11 +46,12 @@
     margin: 15px;
     float: right;
     cursor: pointer;
+    @media (min-width: $breakpoint-web){
+        display: none;
+    }
 }
 .icon-menu hr{
     border: 2px solid white;
+    background-color: white;
     margin: 10px auto;
-}
-.icon-menu:active ~ .header__nav{
-    transform: translateX(42.9%);
 }

@@ -1,8 +1,24 @@
 .aptitudes{
+    margin: 10px 0px 10px 0px;
     &__article{
+    color:black;
+    text-align: center;
+
+   
 
     }
     &__div{
         background-color: $primary-color;
+        color: white;
+        margin: 10px 0px 10px 0px;
+        height: 230px;
+        padding: 20px;
+        h3{
+            margin-bottom: 20px;
+        }
+        p{
+            margin: 0 auto;
+            width: 220px;
+        }
     }
 }
