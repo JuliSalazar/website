@@ -53,6 +53,7 @@ h2 {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     width: 100%;
+    text-align: right;
     background: transparent;
     position: relative;
     padding-top: 0px;
@@ -102,7 +103,7 @@ h2 {
 .banner {
   width: 100%;
   height: 600px;
-  background-image: url("/src/imgBanner.png");
+  background-image: url("../src/imgBanner.png");
   background-position: center;
   background-size: cover;
   -webkit-box-pack: center;
@@ -117,12 +118,6 @@ h2 {
   color: white;
   text-align: center;
   width: 300px;
-}
-
-.banner__info h2 {
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-transform: uppercase;
 }
 
 .caracteristics {
@@ -153,6 +148,64 @@ h2 {
 .aptitudes__div p {
   margin: 0 auto;
   width: 220px;
+}
+
+.gallery {
+  /* .left:hover polyline,
+  .left:focus polyline {
+    stroke-width: 3;
+  }
+  
+  .left:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+  
+  .right:hover polyline,
+  .right:focus polyline {
+    stroke-width: 3;
+  }
+  
+  .right:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+  
+  polyline {
+    transition: all 250ms ease-in-out;
+  }*/
+}
+
+.gallery button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.gallery svg {
+  padding: 5px;
+}
+
+.gallery .arrow {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: -35px;
+  width: 70px;
+  height: 90px;
+}
+
+.gallery .left {
+  left: 2%;
+}
+
+.gallery .right {
+  left: 98%;
+}
+
+.newsletter {
+  background-color: #1A1A1A;
 }
 
 .footer {

@@ -3,7 +3,6 @@
 $primary-color: #1A1A1A;
 $secondary-color: #050505;
 $third-color: #EFEFEF;
-
 $breakpoint-web: 850px;
 
 
@@ -35,5 +34,7 @@ h2{
 @import 'banner';
 @import 'caracteristics';
 @import 'aptitudes';
+@import 'gallery';
+@import 'newsletter';
 @import 'footer';
 
