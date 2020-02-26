@@ -32,6 +32,16 @@ h2 {
   height: 100px;
 }
 
+.header__logo {
+  display: inline-block;
+  margin: 20px;
+}
+
+.header__logo img {
+  width: 120%;
+  height: 120%;
+}
+
 .header__nav {
   display: inline-block;
   width: 70%;
@@ -39,13 +49,13 @@ h2 {
   position: fixed;
   padding-top: 100px;
   background: rgba(24, 24, 24, 0.9);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(130%);
+          transform: translateX(130%);
 }
 
 .header__nav--mobile {
-  -webkit-transform: translateX(42.9%);
-          transform: translateX(42.9%);
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
 }
 
 @media (min-width: 850px) {
@@ -205,7 +215,46 @@ h2 {
 }
 
 .newsletter {
-  background-color: #1A1A1A;
+  background-image: url("../src/newsletter-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 130px;
+}
+
+.newsletter__rect {
+  margin: 0px auto;
+  width: 90%;
+  padding: 20px;
+  background-color: #EFEFEF;
+  color: #2E2E2E;
+  text-align: center;
+}
+
+.newsletter__rect input {
+  background: #FFFFFF;
+  border: 1px solid rgba(47, 47, 47, 0.43);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  width: 300px;
+}
+
+.newsletter__rect h2 {
+  text-transform: none;
+  color: black;
+}
+
+.newsletter__rect p {
+  margin-bottom: 10px;
+}
+
+.newsletter__rect button {
+  background: #0E0E0E;
+  border: 1px solid rgba(47, 47, 47, 0.43);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  padding: 10px;
 }
 
 .footer {
@@ -213,6 +262,42 @@ h2 {
   height: 100px;
   background-color: #050505;
   color: #BABABA;
-  bottom: 50px;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo-info {
+  margin: 10px;
+  display: inline-block;
+}
+
+.footer__logo-info p {
+  font-size: 15px;
+}
+
+.footer__information hr {
+  width: 46px;
+  height: 0px;
+  border: 1px solid #363636;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.footer__information h5 {
+  display: inline-block;
+}
+
+.footer__information img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer p {
+  display: inline;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
