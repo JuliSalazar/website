@@ -1,55 +1,22 @@
+$w: 100%;
+$h: 300px;
 .gallery{
-   
-button {
-    -webkit-appearance: none;
-    background: transparent;
-    border: 0;
-    outline:0;
-  }
-  svg {
-    padding: 5px;
-  }
   
-  .arrow {
-    cursor: pointer;
-    position: absolute;
-    margin-top: -45px;
-    margin-left: -35px;
-    width: 70px;
-    height: 90px;
-  }
-  
-  .left {
-    left: 2%;
-  }
-  
-  .right {
-    left: 98%;
-  }
-  
- /* .left:hover polyline,
-  .left:focus polyline {
-    stroke-width: 3;
-  }
-  
-  .left:active polyline {
-    stroke-width: 6;
-    transition: all 100ms ease-in-out;
-  }
-  
-  .right:hover polyline,
-  .right:focus polyline {
-    stroke-width: 3;
-  }
-  
-  .right:active polyline {
-    stroke-width: 6;
-    transition: all 100ms ease-in-out;
-  }
-  
-  polyline {
-    transition: all 250ms ease-in-out;
-  }*/
+  width: $w;
+    height: $h;
+    overflow: hidden;
+    position: relative;
+   &__img{
+    display: flex;
+    transition: transform .5s ease-in-out;
+    margin: 20px;
+     img{
+    width: $w;
+    height: 100px;
+    object-fit: cover;
+    
+     }
+   }
     
 }
 
