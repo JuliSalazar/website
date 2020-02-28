@@ -57,6 +57,8 @@
     margin: 15px;
     float: right;
     cursor: pointer;
+    z-index: 2;
+    position: relative;
     @media (min-width: $breakpoint-web){
         display: none;
     }

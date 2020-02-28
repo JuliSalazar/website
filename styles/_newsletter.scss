@@ -2,7 +2,7 @@
     background-image: url("../src/images/newsletter-bg.png");
     background-position: center;
     background-size: cover;
-    height: 130px;
+    min-height: 130px;
     &__rect{
         margin: 0px auto;
         width: 80%;

@@ -96,6 +96,8 @@ h2 {
   margin: 15px;
   float: right;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
 }
 
 @media (min-width: 850px) {
@@ -163,33 +165,64 @@ h2 {
 .gallery {
   width: 100%;
   height: 300px;
-  overflow: hidden;
-  position: relative;
-}
-
-.gallery__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform .5s ease-in-out;
-  transition: -webkit-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-  margin: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*overflow: hidden;
+    */
 }
 
-.gallery__img img {
+.gallery__img {
+  background-size: cover;
+  background-position: center;
+  height: 50%;
   width: 100%;
-  height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+.gallery__img--large {
+  height: 100%;
+}
+
+.gallery__container {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__containerImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
 }
 
 .newsletter {
   background-image: url("../src/images/newsletter-bg.png");
   background-position: center;
   background-size: cover;
-  height: 130px;
+  min-height: 130px;
 }
 
 .newsletter__rect {
@@ -230,7 +263,7 @@ h2 {
 
 .footer {
   width: 100%;
-  height: 130px;
+  min-height: 130px;
   background-color: #050505;
   color: #BABABA;
   display: -webkit-box;

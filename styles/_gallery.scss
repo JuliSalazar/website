@@ -1,23 +1,53 @@
 $w: 100%;
 $h: 300px;
 .gallery{
-  
   width: $w;
-    height: $h;
-    overflow: hidden;
-    position: relative;
+  height: $h;
+  display: flex;
+  flex-direction: column;
+
+    /*overflow: hidden;
+    */
    &__img{
-    display: flex;
-    transition: transform .5s ease-in-out;
-    margin: 20px;
-     img{
-    width: $w;
-    height: 100px;
-    object-fit: cover;
-    
-     }
+    //transition: transform .5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    //margin: 20px;
+    height: 50%;
+    width: 100%;
+
+    &--large{
+      height: 100%;
+    }
+
    }
+   &__container{
+     padding: 20px;
+    //position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+   
+   }
+
+   &__containerImages{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+   }
+
+
     
+}
+.arrow{
+  width: 20px;
+    height: 20px;
+    position: absolute;
+  &--rigth{
+
+  }
 }
 
 
