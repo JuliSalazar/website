@@ -22,6 +22,14 @@ function handleWindowResize () {
 }
 window.addEventListener('resize', handleWindowResize);
 
+/*var btnRight = document.querySelector(".nombredelaclase");
+var sliderStrip = document.querySelector(".slider__strip");
+function handleBtnNextClick(){
+    strip.style.transform = "valor de la cosa en css,siempre en striing comillas";
+}
+    btnRight.addEventListener('click',handleBtnNextClick);
+*/
+
 
 
 

@@ -1,21 +1,22 @@
 .newsletter{
-    background-image: url("../src/newsletter-bg.png");
+    background-image: url("../src/images/newsletter-bg.png");
     background-position: center;
     background-size: cover;
     height: 130px;
     &__rect{
         margin: 0px auto;
-        width: 90%;
+        width: 80%;
         padding: 20px;
         background-color: $third-color;
         color: #2E2E2E;
         text-align: center;
+        
         input{
             background: #FFFFFF;
             border: 1px solid rgba(47, 47, 47, 0.43);
             box-sizing: border-box;
             padding: 10px;
-            width: 300px;
+            width: 72%;
         }
         h2{
             text-transform: none;
