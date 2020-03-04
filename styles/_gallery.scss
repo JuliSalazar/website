@@ -5,14 +5,11 @@ $h: 300px;
   height: $h;
   display: flex;
   flex-direction: column;
-
-    /*overflow: hidden;
-    */
+  position: relative;
+  overflow: hidden;
    &__img{
-    //transition: transform .5s ease-in-out;
     background-size: cover;
     background-position: center;
-    //margin: 20px;
     height: 50%;
     width: 100%;
 
@@ -21,10 +18,16 @@ $h: 300px;
     }
 
    }
-   &__container{
-     padding: 20px;
-    //position: relative;
+   &__strip{
     display: flex;
+    transition: transform .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+   }
+   &__container{
+     padding: 25px;
+    display: flex;
+    flex-shrink: 0;
     flex-direction: row;
     width: 100%;
     height: 100%;
@@ -36,6 +39,7 @@ $h: 300px;
     flex-direction: column;
     width:100%;
     height: 100%;
+    transition: transform .5s ease-in-out;
    }
 
 
@@ -45,8 +49,14 @@ $h: 300px;
   width: 20px;
     height: 20px;
     position: absolute;
-  &--rigth{
-
+    top: $h/2;
+    z-index: 2;
+  &--right{
+    right: 0px;
+  }
+  &--left{
+    left: 0px;
+    transform: rotate(180deg);
   }
 }
 
