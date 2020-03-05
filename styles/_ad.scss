@@ -1,0 +1,11 @@
+.ad{
+    background-color: $third-color;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    img{
+        object-fit: cover;
+        height: 100%;
+    }
+}

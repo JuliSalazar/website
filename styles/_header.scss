@@ -9,8 +9,7 @@
         img{
         width: 120%;
         height: 120%;
-        }
-            
+        }  
     }
     &__nav{
       
@@ -22,9 +21,11 @@
         background: rgba(24, 24, 24, 0.9);
         transform: translateX(130%);
         &--mobile {
+            
             transform: translateX(30%);
         }
         @media (min-width: $breakpoint-web){
+            
             transform: translateX(0%);
             width: 100%;
             text-align: right;
@@ -59,8 +60,24 @@
     cursor: pointer;
     z-index: 2;
     position: relative;
+    
+    
     @media (min-width: $breakpoint-web){
         display: none;
+    }
+    &--open{
+       
+        hr:nth-child(2){
+            display: none;
+        }
+        hr:nth-child(1){
+            
+            transform: rotate(45deg) translateY(10px);
+        }
+        hr:nth-child(3){
+            
+            transform: rotate(-45deg) translateY(-10px);
+        }
     }
 }
 .icon-menu hr{
@@ -68,3 +85,4 @@
     background-color: white;
     margin: 10px auto;
 }
+

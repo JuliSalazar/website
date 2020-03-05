@@ -4,7 +4,7 @@ var iconMenu = document.querySelector('.icon-menu');
 var handleMenuClick = function () {
     
     headerNav.classList.toggle('header__nav--mobile');
-    
+    iconMenu.classList.toggle("icon-menu--open");
 }
 iconMenu.addEventListener('click', handleMenuClick);
 
@@ -14,6 +14,8 @@ function handleWindowResize () {
     }
 }
 window.addEventListener('resize', handleWindowResize);
+
+
 
 //Javascript para el funcionamiento del slider de galería de imagenes
 

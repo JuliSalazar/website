@@ -107,6 +107,20 @@ h2 {
   }
 }
 
+.icon-menu--open hr:nth-child(2) {
+  display: none;
+}
+
+.icon-menu--open hr:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(10px);
+          transform: rotate(45deg) translateY(10px);
+}
+
+.icon-menu--open hr:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-10px);
+          transform: rotate(-45deg) translateY(-10px);
+}
+
 .icon-menu hr {
   border: 2px solid white;
   background-color: white;
@@ -393,6 +407,25 @@ h2 {
 
 .project input[type=range]:focus::-ms-fill-upper {
   background: #EFEFEF;
+}
+
+.ad {
+  background-color: #EFEFEF;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 450px;
+}
+
+.ad img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .newsletter {
