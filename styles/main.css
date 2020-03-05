@@ -249,6 +249,152 @@ h2 {
           transform: rotate(180deg);
 }
 
+.project {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project__content {
+  margin: 0px auto;
+  z-index: 1;
+  width: 80%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.project__image {
+  margin: 0px auto;
+  width: 80%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project__background {
+  width: 100%;
+  height: 80%;
+  bottom: 0px;
+  position: absolute;
+  z-index: -1;
+  background-color: #1A1A1A;
+}
+
+.project__input {
+  width: 100%;
+}
+
+.project input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.project input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #EFEFEF;
+  border-radius: 25px;
+  border: 0.1px solid;
+}
+
+.project input[type=range]::-webkit-slider-thumb {
+  border: 0.1px solid #B8B8B8;
+  height: 20px;
+  width: 39px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+.project input[type=range]::-webkit-slider-thumb {
+  border: 0.1px solid #B8B8B8;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+.project input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #EFEFEF;
+}
+
+.project input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #EFEFEF;
+  border-radius: 25px;
+  border: 0.1px solid #B8B8B8;
+}
+
+.project input[type=range]::-moz-range-thumb {
+  border: 0.1px solid #B8B8B8;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.project input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+
+.project input[type=range]::-ms-fill-lower {
+  background: #EFEFEF;
+  border: 0.1px solid #B8B8B8;
+  border-radius: 50px;
+}
+
+.project input[type=range]::-ms-fill-upper {
+  background: #EFEFEF;
+  border: 0.1px solid #B8B8B8;
+  border-radius: 50px;
+}
+
+.project input[type=range]::-ms-thumb {
+  border: 0.1px solid #B8B8B8;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #EFEFEF;
+  cursor: pointer;
+}
+
+.project input[type=range]:focus::-ms-fill-lower {
+  background: #EFEFEF;
+}
+
+.project input[type=range]:focus::-ms-fill-upper {
+  background: #EFEFEF;
+}
+
 .newsletter {
   background-image: url("../src/images/newsletter-bg.png");
   background-position: center;

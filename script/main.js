@@ -4,6 +4,7 @@ var iconMenu = document.querySelector('.icon-menu');
 var handleMenuClick = function () {
     
     headerNav.classList.toggle('header__nav--mobile');
+    
 }
 iconMenu.addEventListener('click', handleMenuClick);
 
@@ -43,7 +44,16 @@ function handleBtnNextClick(){
     }
     btnLeft.addEventListener('click', handleBtnPrevClick);
 
-    
+//Javascript para el funcionamiento de la interacción del usuario con las imagenes
+
+var projectImage = document.querySelector('.project__image');
+var projectInput = document.querySelector('.project__input');
+function handleProjectInput () {
+    var index = projectInput.value;
+    projectImage.setAttribute('src', './src/images/agenda' + index + '.jpg');
+}
+handleProjectInput();
+projectInput.addEventListener('input', handleProjectInput);
 
 
 
