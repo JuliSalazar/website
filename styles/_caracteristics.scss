@@ -1,7 +1,9 @@
 .caracteristics{
     background-color: $third-color;
+    text-align: center;
     &__article{
-
+        margin: 0px auto;
+        width: 300px;
     }
     
 }
