@@ -5,6 +5,9 @@ $secondary-color: #050505;
 $third-color: #EFEFEF;
 $breakpoint-web: 850px;
 
+html,body{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0px;

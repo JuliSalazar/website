@@ -59,8 +59,9 @@ $fontsize-web: 15px;
         width: 15%;
         align-self: center;
         margin: 10px;
-        button{
-        
+        a{
+        text-decoration: none;
+        color: black;
         align-items: center;
     border: 0px;
     background: rgba(255, 255, 255, 0.95);
