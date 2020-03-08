@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Rosario&display=swap");
+html, body {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -19,7 +23,7 @@
   padding: 10px 20px;
 }
 
-h2 {
+h2, h3 {
   font-weight: bold;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -61,12 +65,11 @@ h2 {
 
 @media (min-width: 850px) {
   .header__nav {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(-5.6%);
+            transform: translateX(-5.6%);
     width: 100%;
     text-align: right;
     background: transparent;
-    position: relative;
     padding-top: 0px;
     margin-right: 0 auto;
   }
@@ -149,6 +152,12 @@ h2 {
 
 .caracteristics {
   background-color: #EFEFEF;
+  text-align: center;
+}
+
+.caracteristics__article {
+  margin: 0px auto;
+  width: 300px;
 }
 
 .aptitudes {
@@ -174,7 +183,13 @@ h2 {
 
 .aptitudes__div p {
   margin: 0 auto;
-  width: 220px;
+  width: 300px;
+}
+
+.aptitudes__div img {
+  margin: 15px;
+  width: 45px;
+  height: 45px;
 }
 
 .gallery {
@@ -483,6 +498,13 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    font-size: 15px;
+  }
 }
 
 .footer__content {
@@ -491,10 +513,13 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__logo-info {
-  width: 130px;
+  width: 30%;
   margin: 15px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,14 +533,22 @@ h2 {
           align-items: center;
 }
 
-.footer__logo-info p {
-  font-size: 14px;
-}
-
 .footer__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 55%;
   border-left: 1px solid #363636;
-  padding: 10px 20px;
-  height: 100px;
+  padding: 5px 10px;
+  height: 80px;
 }
 
 .footer__information h5 {
@@ -531,13 +564,34 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.footer__button-up button {
+.footer__politics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__button-up {
+  width: 15%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10px;
+}
+
+.footer__button-up a {
+  text-decoration: none;
+  color: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px;
   border: 0px;
   background: rgba(255, 255, 255, 0.95);
   font-weight: bold;
