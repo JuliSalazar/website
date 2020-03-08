@@ -3,6 +3,10 @@
     &__article{
     color:black;
     text-align: center;
+    p{
+        width: 80%;
+        margin: 0 auto;
+    }
     }
     &__div{
         background-color: $primary-color;

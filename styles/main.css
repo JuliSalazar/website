@@ -155,9 +155,24 @@ h2, h3 {
   text-align: center;
 }
 
+.caracteristics a {
+  color: black;
+}
+
 .caracteristics__article {
   margin: 0px auto;
-  width: 300px;
+  width: 270px;
+  padding: 10px;
+}
+
+.caracteristics__article img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.caracteristics article:nth-child(n+2) {
+  border-top: 1px solid #363636;
 }
 
 .aptitudes {
@@ -167,6 +182,11 @@ h2, h3 {
 .aptitudes__article {
   color: black;
   text-align: center;
+}
+
+.aptitudes__article p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .aptitudes__div {
@@ -430,7 +450,31 @@ h2, h3 {
 
 .ad {
   background-color: #EFEFEF;
-  padding: 30px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+.ad img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  right: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ad__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,13 +482,15 @@ h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 450px;
+  width: 60%;
 }
 
-.ad img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
+.ad__info h2 {
+  text-align: left;
+}
+
+.ad__info a {
+  color: black;
 }
 
 .newsletter {

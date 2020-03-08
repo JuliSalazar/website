@@ -28,8 +28,8 @@ $fontsize-web: 15px;
     }
     &__information{
         display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-around;
         align-self: center;
         width: 55%;
         border-left:  1px solid #363636;
