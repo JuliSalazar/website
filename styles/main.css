@@ -746,6 +746,12 @@ h2, h3 {
           justify-content: space-between;
 }
 
+@media (min-width: 1024px) {
+  .footer__politics {
+    width: 80%;
+  }
+}
+
 .footer__button-up {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

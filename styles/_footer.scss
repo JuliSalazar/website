@@ -54,6 +54,9 @@ $fontsize-web: 17px;
     &__politics{
         display: flex;
         justify-content: space-between;
+        @media (min-width: $breakpoint-web){
+            width: 80%;
+        }
     }
     &__button-up {
         
