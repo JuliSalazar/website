@@ -353,6 +353,7 @@ h2, h3 {
   position: absolute;
   top: 150px;
   z-index: 2;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {

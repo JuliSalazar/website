@@ -63,6 +63,7 @@ $h-web: $h+300px;
     position: absolute;
     top: $h/2;
     z-index: 2;
+    cursor: pointer;
     @media (min-width: $breakpoint-web){
       top: $h-web/2;
     }
@@ -74,6 +75,7 @@ $h-web: $h+300px;
     transform: rotate(180deg);
   }
 }
+
 
 
 
