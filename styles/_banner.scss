@@ -13,6 +13,8 @@
     color:white;
     text-align: center;
     width: 300px;
-    
+    @media (min-width: $breakpoint-web){
+        width: 570px;
+    }
 }
 
