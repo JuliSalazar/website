@@ -733,7 +733,7 @@ h2, h3 {
 
 @media (min-width: 1024px) {
   .footer__social {
-    width: 50%;
+    width: 30%;
   }
 }
 
@@ -753,22 +753,46 @@ h2, h3 {
 }
 
 .footer__button-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   margin: 10px;
-}
-
-.footer__button-up a {
-  text-decoration: none;
-  color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: 0px;
   background: rgba(255, 255, 255, 0.95);
   font-weight: bold;
-  padding: 0px 10px;
+}
+
+.footer__button-up a {
+  color: black;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 10px;
+}
+
+.footer__button-up a img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+}
+
+@media (min-width: 1024px) {
+  .footer__button-up a img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .footer p {
