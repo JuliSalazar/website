@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Rosario&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
-$primary-color: #1A1A1A;
-$secondary-color: #050505;
-$third-color: #EFEFEF;
+$violet-color: #04042C;
+$pruple-color: #3E0A9B;
+$yellow-color: #EAB600;
+$blue-color: #72C5E4;
+$pink-color: #B92E4E;
 $breakpoint-web: 1024px;
 
 html,body{
@@ -13,7 +16,7 @@ html,body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Rosario;
+    font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: normal;
   
