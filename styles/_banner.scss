@@ -1,20 +1,27 @@
-.banner{
+.banner {
     width: 100%;
-    height: 600px;
-    background-image: url("../src/images/imgBanner.png");
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-}
-.banner__info{
-    position: relative;
-    top: 70%;
-    margin: 0px auto;
-    color:white;
-    text-align: center;
-    width: 300px;
-    @media (min-width: $breakpoint-web){
-        width: 570px;
+    background: linear-gradient(210.51deg, #14145c 19.62%, #04042c 54.04%);
+    display: flex;
+    &__img {
+        width: 30%;
+        margin-top: 10%;
+        margin-left: 10%;
+        opacity: 0.8;
+    }
+    &__title {
+        color: rgba(247, 247, 247, 0.2);
+        font-size: 5rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 92.18%;
+        font-style: bold;
+        font-weight: 800;
+    }
+
+    &__info {
+        position: relative;
+        width: 50%;
+        color: white;
+        align-self: center;
+        
     }
 }
-

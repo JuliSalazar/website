@@ -3,28 +3,29 @@
     z-index: 1;
     position: absolute;
     height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
     &__logo{
         display: inline-block;
         margin: 20px;
-        img{
-        width: 120%;
-        height: 120%;
-        }  
+        margin-left: 3%;
     }
     &__nav{
-      
-        display: inline-block;
-        width:70%;
-        height: 100%;
-        position: fixed;
-        padding-top: 100px; 
-        background: rgba(24, 24, 24, 0.9);
-        transform: translateX(130%);
-        &--mobile {
+     justify-self: flex-end;
+ 
+       /*  display: inline-block; */
+        /* width:70%;
+        height: 100%; */
+      //  position: fixed;
+       // padding-top: 100px; 
+       
+       // transform: translateX(130%);
+        /* &--mobile {
             
             transform: translateX(30%);
-        }
-        @media (min-width: $breakpoint-web){
+        } */
+        /* @media (min-width: $breakpoint-web){
             transform: translateX(-5.6%);
             width: 100%;
             text-align: right;
@@ -32,15 +33,15 @@
             position: absolute;
             padding-top: 0px; 
             margin-right: 0 auto;
-        }
+        } */
     }
     
     &__link{
         text-decoration: none;
         display: block;
         padding: 25px;
-        padding-left: 30px;
-        color: rgb(255, 255, 255);
+       // padding-left: 30px;
+        color: white;
         border-bottom: 1px solid rgba(255, 255, 255,0.3);
         @media (min-width: $breakpoint-web){
             display: inline-block;
@@ -49,7 +50,7 @@
     }
     
     &__link:hover{
-        background: rgba(255, 255, 255,0.2);
+       // background: rgba(255, 255, 255,0.2);
     }
 }
 .icon-menu{

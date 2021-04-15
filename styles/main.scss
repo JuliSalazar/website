@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 $violet-color: #04042C;
@@ -22,28 +22,25 @@ html,body{
   
 }
 .button{
-    margin: 15px;
-    border: 0px;
-    background: rgba(255, 255, 255, 0.95);
-    letter-spacing: 0.17em;
+    border: 1px solid #FFFFFF;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 300;
     padding: 10px 20px;
+    background-color: transparent;
+    color: white;
 }
 h2,h3{
     font-weight: bold;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-        text-align: center;
+    text-transform: uppercase;
 }
 
 @import 'header';
-@import 'banner';
-@import 'caracteristics';
+ @import 'banner';
+/* @import 'caracteristics';
 @import 'aptitudes';
 @import 'gallery';
 @import 'project';
 @import 'ad';
 @import 'newsletter';
-@import 'footer';
+@import 'footer';  */
 
