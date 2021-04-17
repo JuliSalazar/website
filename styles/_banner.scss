@@ -1,12 +1,24 @@
 .banner {
-    width: 100%;
+    padding-top: 5%;
+    height: 100vh;
     background: linear-gradient(210.51deg, #14145c 19.62%, #04042c 54.04%);
     display: flex;
     &__img {
-        width: 30%;
-        margin-top: 10%;
-        margin-left: 10%;
+        
         opacity: 0.8;
+    }
+    &__explore{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        p{
+            transform: rotate(-90deg);
+        }
+        img{
+            margin-top: 50%;
+        }
     }
     &__title {
         color: rgba(247, 247, 247, 0.2);

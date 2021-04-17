@@ -3,8 +3,6 @@ $fontsize-web: 17px;
 .footer{
     width: 100%;
     min-height: 130px;
-    background-color: $secondary-color;
-    color: #BABABA;
     display: flex;
     flex-direction: column;
     font-size: $fontsize-mobile;
@@ -18,7 +16,7 @@ $fontsize-web: 17px;
         display: flex;
         justify-content: space-evenly;
     }
-    &__logo-info{
+    &__logo{
         margin: 15px 5px;
         display: flex;
         flex-direction: column;

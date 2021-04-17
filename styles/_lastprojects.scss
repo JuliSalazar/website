@@ -1,0 +1,97 @@
+.latestProjects {
+    /* text-align: center;
+    a{
+        color: black;
+    }
+    &__article{
+        margin: 0px auto;
+        width: 70%;
+        padding: 10px;
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+       
+       
+    } */
+    @media (min-width: $breakpoint-web) {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        justify-content: space-evenly;
+        &__article {
+            position: relative;
+            z-index: 1;
+            width: 400px;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:hover:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: linear-gradient(0deg, #3E0A9B -14.13%, rgba(62, 10, 155, 0) 73.84%);
+
+            }
+          /*   &:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: linear-gradient(180deg, #04042C 0%, rgba(4, 4, 44, 0.08) 38.46%, rgba(4, 4, 44, 0) 66.77%, #04042C 100%);
+                opacity: 0.8;
+            } */
+
+            &:hover:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                position: absolute;
+                top: 2%;
+                left: 2%;
+                border: 1px solid $white-color;
+            }
+        }
+
+        &__info {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            color: #ffffff;
+            opacity: 0;
+            
+            h4 {
+                color: #ffffff;
+                opacity: 0.5;
+                font-family: $open-sans;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 25px;
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 24px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
