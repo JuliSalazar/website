@@ -1,23 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;700&display=swap");
 
 $violet-color: #04042c;
 $pruple-color: #3e0a9b;
 $yellow-color: #eab600;
 $blue-color: #72c5e4;
 $pink-color: #b92e4e;
-$white-color: #F7F7F7;
+$white-color: #f7f7f7;
 $breakpoint-web: 1024px;
-$open-sans:'Open Sans', sans-serif;
-$ibm-plex:'IBM Plex Sans', sans-serif;
-$section-title-spacing-top: -.4em;
+$open-sans: "Open Sans", sans-serif;
+$ibm-plex: "IBM Plex Sans", sans-serif;
+$section-title-spacing-top: -0.4em;
 $section-title-spacing-left: 1em;
+$padding-left:4.5em;
+$padding-right: 4em;
 
 html,
 body {
+    position: relative;
     scroll-behavior: smooth;
     color: #ffffff;
+    background: linear-gradient(
+        180deg,
+        rgba(4, 4, 44, 0) 53.13%,
+        #151568 69.58%,
+        #151568 90.7%,
+        rgba(21, 21, 104, 0) 100%
+    );
     background-color: $violet-color;
+    z-index: 1;
+}
+#bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
 * {
@@ -32,15 +49,45 @@ button {
     border: 1px solid #ffffff;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 10px 20px;
     background-color: transparent;
     color: white;
+    width: 120px;
+    height: 35px;
+    font-size: 0.9em;
+}
+a {
+    color: white;
+    font-family: $ibm-plex;
+    font-style: normal;
+    font-weight: 300;
+}
+input,
+textarea {
+    background: rgba(247, 247, 247, 0.3);
+    backdrop-filter: blur(8px);
+    border: none;
+    padding: 8px 0px 8px 14px;
+}
+input::placeholder,
+textarea::placeholder {
+    font-family: $ibm-plex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.5;
 }
 /* h2{
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
 } */
+p {
+    font-family: $ibm-plex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+}
 .sectionTitle {
     text-transform: uppercase;
     margin-top: 2em;
@@ -63,12 +110,82 @@ button {
         margin-top: $section-title-spacing-top;
         margin-left: $section-title-spacing-left;
     }
+    h3 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 31px;
+        text-align: right;
+        text-transform: none;
+        color: #ffffff;
+        opacity: 0.5;
+        margin-top: -2em;
+        margin-right: 4.5em;
+    }
+}
+
+.projectDecoration {
+    width: 100%;
+    height: 40vh;
+    z-index: -1;
+    background-image: url("../src/images/planetsProject.png");
+    background-position: center;
+    background-size: cover;
+}
+.aboutMeDecoration {
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+    margin: -5em 0 -10em;
+    background-image: url("../src/images/aboutMePlanets.png");
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+}
+.contactDecoration {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    bottom: 0;
+    background-image: url("../src/images/contactPlanets.png");
+    background-position: center;
+    opacity: .8;
+}
+.bgGalaxy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+    opacity: 0.5;
+    background-image: url("../src/images/bgGalaxy.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.bannerDecoration {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    &__planets {
+        position: absolute;
+        right: 0;
+    }
+    &__stars {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 @import "header";
 @import "banner";
 @import "lastprojects";
-@import 'footer';
+@import "footer";
+@import "aboutmesection";
+@import "contactmesection";
 /*@import 'aptitudes';
 @import 'gallery';
 @import 'project';

@@ -17,21 +17,34 @@
     } */
     @media (min-width: $breakpoint-web) {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         display: flex;
         position: relative;
         color: white;
         text-decoration: none;
         justify-content: space-evenly;
+        &__a{
+            width: 27%;
+            height: 298px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                align-self: center;
+            }
+            &:hover{
+                width: 28%;
+            height: 300px;
+            }
+        }
+
         &__article {
             position: relative;
             z-index: 1;
-            width: 400px;
-            height: 300px;
-            img {
-                width: 100%;
-                height: 100%;
-            }
+            width: 100%;
+            height: 100%;
+            
             &:hover:before {
                 content: "";
                 width: 100%;
@@ -42,16 +55,6 @@
                 background: linear-gradient(0deg, #3E0A9B -14.13%, rgba(62, 10, 155, 0) 73.84%);
 
             }
-          /*   &:before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                right: 0;
-                background: linear-gradient(180deg, #04042C 0%, rgba(4, 4, 44, 0.08) 38.46%, rgba(4, 4, 44, 0) 66.77%, #04042C 100%);
-                opacity: 0.8;
-            } */
 
             &:hover:after {
                 content: "";
@@ -67,10 +70,15 @@
 
         &__info {
             position: absolute;
-            bottom: 5%;
-            left: 5%;
+            padding-left: 5%;
+            padding-bottom: 5%;
             color: #ffffff;
             opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             
             h4 {
                 color: #ffffff;
@@ -93,5 +101,10 @@
                 opacity: 1;
             }
         }
+        &__button{
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
+

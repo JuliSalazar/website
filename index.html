@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!--  <div id="bg"></div>-->
     <header class="header" id="up">
         <div class="header__logo">
             <img src="./src/icons/logo.svg" alt="">
@@ -26,27 +27,36 @@
             <a class="header__link" href="">Contact</a>
         </nav>
     </header>
+    
+    <div class="bannerDecoration">
+        <img class="bannerDecoration__planets" src="./src/images/bannerPlanets.png" alt="">
+        <img class="bannerDecoration__stars" src="./src/images/bgStars.png" alt="">
+    </div>
     <main class="banner">
         <div class="banner__explore">
             <p>Let’s explore!</p>
             <img src="./src/images/arrowExplore.png" alt="">
         </div>
-        <img class="banner__img" src="./src/images/profileimg.png" alt="">
+        <div class="banner__img">
+            <img class="banner__img" src="./src/images/profileimg.png" alt="">
+        </div>
         <div class="banner__info">
             <h2 class="banner__title">INTERACTION <br> DESIGNER</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac nunc vitae massa fermentum
-                egestas.</p>
+            <p>Focused on UX/UI, sound design and front-end development.<br>I hope you enjoy exploring this site </p>
             <button>
                 About me
             </button>
         </div>
     </main>
+    <div class="bgGalaxy">
+    </div>
     <div class="sectionTitle">
         <h1>Latest</h1>
         <h2>Projects</h2>
+        <h3>Choose to change the world</h3>
     </div>
     <section class="latestProjects">
-        <a href="#">
+        <a class="latestProjects__a" href="#">
             <article class="latestProjects__article">
                 <div class="latestProjects__info">
                     <h4>UX/UI</h4>
@@ -56,84 +66,95 @@
                 <img src="./src/images/project1.png" alt="">
             </article>
         </a>
-        <a href="#">
-            <article class="latestProjects__article"><div class="latestProjects__info">
-                <h3>Tendi</h3>
-                <p>An aplication to retail stores in Colombia</p>
-            </div>
+        <a class="latestProjects__a" href="#">
+            <article class="latestProjects__article">
+                <div class="latestProjects__info">
+                    <h4>UX/UI</h4>
+                    <h3>Amazon Abstract Sounds</h3>
+                    <p>An aplication to retail stores in Colombia</p>
+                </div>
                 <img src="./src/images/project2.jpg" alt="">
             </article>
         </a>
-        <a href="#">
+        <a class="latestProjects__a" href="#">
             <article class="latestProjects__article">
                 <div class="latestProjects__info">
+                    <h4>Sound Design</h4>
                     <h3>Tendi</h3>
                     <p>An aplication to retail stores in Colombia</p>
                 </div>
                 <img src="./src/images/project1.png" alt="">
             </article>
         </a>
+        <button class="latestProjects__button">See More</button>
     </section>
-    <button>See More</button>
+    <div class="projectDecoration">
+    </div>
     <div class="sectionTitle">
-        <h1>Talk</h1>
+        <h1>Meet</h1>
         <h2>About me</h2>
+        <h3>Each person is a world to explore</h3>
     </div>
     <section class="aboutMeSection">
         <div class="aboutMeSection__info">
             <h2>Hello!</h2>
-            <p>My name is Julieth Salazar and I live in Cali, Colombia. I am a charismatic, responsible and friendly person.
-                I love teaching, programming, sound design, and experience design. For me it is very gratifying to know people's stories and put myself in their shoes to find a solution close to them.
+            <p>My name is Julieth Salazar and I live in Cali, Colombia. I am a charismatic, responsible and friendly
+                person.<br>
+                I love teaching, programming, sound design, and experience design.<br>For me it is very gratifying to know
+                people's stories and put myself in their shoes to find a solution close to them.<br>
                 I really enjoy artistic activities such as dancing, drawing and singing. </p>
-            <button>Download CV</button>
         </div>
-        <img src="./src/images/adviceimage.png" alt="">
+        <div class="aboutMeSection__img">
+            <img src="./src/images/aboutMeImg.png" alt="">
+        </div>
+        <button class="aboutMeSection__button">Meet me</button>
     </section>
+    <div class="aboutMeDecoration">
+    </div>
+    <div class="sectionTitle">
+        <h1>Talk</h1>
+        <h2>Contact me</h2>
+        <h3>I'll pleased to meet you :)</h3>
+    </div>
+    <section class="contactMeSection">
+
+        <form action="" class="contactMeSection__form">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="E-mail">
+            <input type="text" name="" id="" placeholder="Subject">
+            <textarea name="message" id="message" cols="40" rows="8" required="" placeholder="Message"></textarea>
+            <button>Send</button>
+        </form>
+        <div class="contactMeSection__info">
+            <div class="contactInformation">
+                <img src="./src/icons/phoneIcon.svg" alt="">
+                <div class="contactInformation__text">
+                    
+                    <h3>Phone</h3>
+                    <p>(+57) 310 2736476</p>
+                </div>
+            </div>
+            <div class="contactInformation">
+                <img src="./src/icons/mailIcon.svg" alt="">
+                <div class="contactInformation__text">
+                    <h3>E-mail</h3>
+                    <a href="">Juli.Salazar18@hotmail.com</a>
+                </div>
+            </div>
+            <div class="contactInformation">
+                <img src="./src/icons/downloadIcon.svg" alt="">
+                <div class="contactInformation__text">
+                    <h3>Curriculum vitae</h3>
+                    <a href="">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="contactDecoration">
+    </div>
     <!--   
-    <section class="aptitudes">
-        <h2>Aptitudes</h2>
-        <p>Durante la carrera he desarrollado aptitudes en varios campos, entre ellos, el diseño gráfico, de experiencia y programación. </p>
-        <article class="aptitudes__article">
-            <div class="aptitudes__div">
-                <h3>Diseño</h3>
-                <p>Sobre diseño aprendí a usar Photoshop e Illustrator, sin embargo no me cierro a usar solo estos programas.
-                </p>
-                <img src="./src/images/psicon.png" alt="">
-                <img src="./src/images/AIicon.png" alt="">
-            </div>
-            <div class="aptitudes__div">
-                <h3>Diseño de experiencia</h3>
-                <p>Aprendí sobre diseño de experiencia e interfaces de usuario, usando las herramientas Figma, Adobe XD, entre otras.
-                </p>
-                <img src="./src/images/xdicon.png" alt="">
-                <img class="large" src="./src/images/figmaicon.png" alt="">
-            </div>
-            <div class="aptitudes__div">
-                <h3>Programación</h3>
-                <p>Tengo conocimiento sobre los lenguajes de programación de Java y Javascript, usando programas como Processing y Eclipse.
-                </p>
-                <img src="./src/images/proceicon.png" alt="">
-                <img src="./src/images/eclipseicon.png" alt="">
-            </div>
-        </article>
-    </section>
-    <section class="project">
-        <h2>Proyecto: Agendas</h2>
-        <img class="project__image" src="" alt="">
-        <div class="project__content">    
-            <input class="project__input" type="range" min="1" max="6" value="0">
-            <p>¡Desliza para ver el proceso de personalización de una agenda!</p>
-        </div>
-        <div class="project__background"></div>
-    </section>
-    <section class="ad">
-        <div class="ad__info">
-            <h2>Proyecto más reciente</h2>
-            <p>Realizamos una aplicación llamada Choosit y simulamos sus interacciones en wireframes de papel.</p>
-            <a href="#">Leer más...</a>
-        </div>
-        <img src="./src/images/adviceimage.png" alt="">
-    </section>
+   
     <section class="newsletter">
         <div class="newsletter__rect">
             <h2>
@@ -147,22 +168,25 @@
     
     <script src="./script/main.js"></script> -->
     <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__logo">
-                <img src="./src/images/logoshort.png" alt="">
-            </div>
+       
+                <img class="footer__logo" src="./src/icons/logoFooter.svg" alt="">
+      
+            <div class="footer__content">
                 <div class="footer__social">
-                    <h5>Find me on: </h5>
-                    <img src="./src/icons/github.svg" alt="">
-                    <img src="./src/icons/linkedin.svg" alt="">
-                    <img src="./src/icons/behance.svg" alt="">
+                    <img src="./src/icons/behanceIcon.svg" alt="">
+                    <img src="./src/icons/linkedInIcon.svg" alt="">
+                    <img src="./src/icons/githubIcon.svg" alt="">
+                    <img src="./src/icons/instagramIcon.svg" alt="">
                 </div>
-            <div class="footer__button-up">
-                <a href="#up">Subir <img src="./src/icons/right-arrow.svg" alt=""></a>
+                <p>© 2020 Juli Salazar. All Rights Reserved.</p>
             </div>
-        </div>
-        <p>© 2020 Juli Salazar. All Rights Reserved.</p>
+            <div class="footer__button-up">
+                <a href="#up">To the surface <img src="./src/icons/upArrow.svg" alt=""></a>
+            </div>
+        
     </footer>
+    <!-- <script src="./script/particles.js"></script>
+    <script src="./script/custom.js"></script> -->
 </body>
 
 </html>

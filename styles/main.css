@@ -2,9 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;700&display=swap");
 html,
 body {
+  position: relative;
   scroll-behavior: smooth;
   color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(53.13%, rgba(4, 4, 44, 0)), color-stop(69.58%, #151568), color-stop(90.7%, #151568), to(rgba(21, 21, 104, 0)));
+  background: linear-gradient(180deg, rgba(4, 4, 44, 0) 53.13%, #151568 69.58%, #151568 90.7%, rgba(21, 21, 104, 0) 100%);
   background-color: #04042c;
+  z-index: 1;
+}
+
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
 * {
@@ -21,9 +32,67 @@ button {
   border: 1px solid #ffffff;
   text-transform: uppercase;
   font-weight: 300;
-  padding: 10px 20px;
   background-color: transparent;
   color: white;
+  width: 120px;
+  height: 35px;
+  font-size: 0.9em;
+}
+
+a {
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  background: rgba(247, 247, 247, 0.3);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: none;
+  padding: 8px 0px 8px 14px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
 /* h2{
@@ -31,6 +100,13 @@ button {
     text-transform: uppercase;
     color: #FFFFFF;
 } */
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 .sectionTitle {
   text-transform: uppercase;
   margin-top: 2em;
@@ -57,6 +133,81 @@ button {
   margin-left: 1em;
 }
 
+.sectionTitle h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: right;
+  text-transform: none;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: -2em;
+  margin-right: 4.5em;
+}
+
+.projectDecoration {
+  width: 100%;
+  height: 40vh;
+  z-index: -1;
+  background-image: url("../src/images/planetsProject.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutMeDecoration {
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+  margin: -5em 0 -10em;
+  background-image: url("../src/images/aboutMePlanets.png");
+  background-position: center;
+  background-size: cover;
+  opacity: .8;
+}
+
+.contactDecoration {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+  bottom: 0;
+  background-image: url("../src/images/contactPlanets.png");
+  background-position: center;
+  opacity: .8;
+}
+
+.bgGalaxy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: color-dodge;
+  opacity: 0.5;
+  background-image: url("../src/images/bgGalaxy.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bannerDecoration {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+}
+
+.bannerDecoration__planets {
+  position: absolute;
+  right: 0;
+}
+
+.bannerDecoration__stars {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .header {
   width: 100%;
   z-index: 1;
@@ -71,12 +222,11 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 4em 0 4.5em;
 }
 
 .header__logo {
   display: inline-block;
-  margin: 20px;
-  margin-left: 3%;
 }
 
 .header__nav {
@@ -160,6 +310,7 @@ button {
 
 .banner__img {
   opacity: 0.8;
+  margin-left: 3%;
 }
 
 .banner__explore {
@@ -177,11 +328,14 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-left: 1.5em;
 }
 
 .banner__explore p {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
 }
 
 .banner__explore img {
@@ -190,20 +344,32 @@ button {
 
 .banner__title {
   color: rgba(247, 247, 247, 0.2);
-  font-size: 5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 5.6rem;
+  font-family: "Open Sans", sans-serif;
   line-height: 92.18%;
   font-style: bold;
   font-weight: 800;
+  margin-left: -.3rem;
 }
 
 .banner__info {
-  position: relative;
-  width: 50%;
-  color: white;
+  position: absolute;
+  right: 0;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  width: 50vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
 }
 
 .latestProjects {
@@ -228,7 +394,7 @@ button {
 @media (min-width: 1024px) {
   .latestProjects {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -239,23 +405,27 @@ button {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .latestProjects__a {
+    width: 27%;
+    height: 298px;
+    position: relative;
+  }
+  .latestProjects__a img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .latestProjects__a:hover {
+    width: 28%;
+    height: 300px;
+  }
   .latestProjects__article {
     position: relative;
     z-index: 1;
-    width: 400px;
-    height: 300px;
-    /*   &:before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                right: 0;
-                background: linear-gradient(180deg, #04042C 0%, rgba(4, 4, 44, 0.08) 38.46%, rgba(4, 4, 44, 0) 66.77%, #04042C 100%);
-                opacity: 0.8;
-            } */
-  }
-  .latestProjects__article img {
     width: 100%;
     height: 100%;
   }
@@ -277,14 +447,26 @@ button {
     position: absolute;
     top: 2%;
     left: 2%;
-    border: 1px solid #F7F7F7;
+    border: 1px solid #f7f7f7;
   }
   .latestProjects__info {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
     color: #ffffff;
     opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .latestProjects__info h4 {
     color: #ffffff;
@@ -306,40 +488,13 @@ button {
   .latestProjects__info:hover {
     opacity: 1;
   }
-}
-
-.footer {
-  width: 100%;
-  min-height: 130px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 14px;
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    font-size: 17px;
+  .latestProjects__button {
+    position: absolute;
+    bottom: 0;
   }
 }
 
-.footer__content {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.footer__logo {
-  margin: 15px 5px;
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,36 +502,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 55%;
-  border-left: 1px solid #363636;
-  padding: 5px 10px;
-  height: 80px;
-}
-
-.footer__information h5 {
-  display: inline-block;
-}
-
-.footer__information img {
-  width: 20px;
-  height: 20px;
+  opacity: .4;
+  margin-top: 10em;
+  position: relative;
+  margin: 8em 4em 0 4.5em;
 }
 
 .footer__social {
@@ -386,74 +515,176 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 70%;
+}
+
+.footer__social img {
+  width: 35px;
 }
 
 @media (min-width: 1024px) {
-  .footer__social {
-    width: 30%;
+  .footer {
+    height: 20vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__content {
+    border-left: 1px solid #f7f7f7;
+    height: 6em;
+    padding-left: 2.5em;
+    margin-left: 2.5em;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer__logo {
+    width: 10%;
+  }
+  .footer__button-up {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center;
+    right: 0;
+  }
+  .footer__button-up a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__button-up a img {
+    width: 10px;
+    height: 10px;
+    margin-left: .5em;
   }
 }
 
-.footer__politics {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (min-width: 1024px) {
-  .footer__politics {
-    width: 80%;
-  }
-}
-
-.footer__button-up {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin: 10px;
-  border: 0px;
-  background: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
-}
-
-.footer__button-up a {
-  color: black;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3px 10px;
-}
-
-.footer__button-up a img {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  width: 10px;
-  height: 10px;
-  margin-left: 4px;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .footer__button-up a img {
     width: 20px;
     height: 20px;
   }
 }
 
-.footer p {
-  text-align: center;
+.aboutMeSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 4.5em 0 4.5em;
+}
+
+@media (min-width: 1024px) {
+  .aboutMeSection__info {
+    width: 70%;
+    height: 45vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .aboutMeSection__info h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 56px;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-bottom: 1em;
+  }
+  .aboutMeSection__info p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
+  .aboutMeSection__img {
+    margin-top: -2%;
+  }
+  .aboutMeSection__button {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactMeSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactMeSection__form {
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    padding-right: 55px;
+    margin-right: 55px;
+    border-right: 1px solid rgba(247, 247, 247, 0.5);
+  }
+  .contactMeSection__form button {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .contactMeSection__info {
+    opacity: .8;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
+.contactInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactInformation h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contactInformation img {
+  margin-right: 20px;
 }
 
 /*@import 'aptitudes';

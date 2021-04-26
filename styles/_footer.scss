@@ -1,89 +1,58 @@
 $fontsize-mobile: 14px;
 $fontsize-web: 17px;
-.footer{
-    width: 100%;
-    min-height: 130px;
+.footer {
     display: flex;
     flex-direction: column;
-    font-size: $fontsize-mobile;
-    @media (min-width: $breakpoint-web){
-        font-size: $fontsize-web;
-    }
-    
-    &__content{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    &__logo{
-        margin: 15px 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__information{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-self: center;
-        width: 55%;
-        border-left:  1px solid #363636;
-        padding: 5px 10px;
-        height: 80px;
-       
-        h5{
-            display: inline-block;
-            
-        }
-        img{
-            width: 20px;
-            height: 20px;
-        }
-
-    }
-    &__social{
+    opacity: .4;
+    margin-top: 10em;
+    position: relative;
+    margin: 8em $padding-right 0 $padding-left;
+    &__social {
         display: flex;
         justify-content: space-between;
-        @media (min-width: $breakpoint-web){
-            width: 30%;
-        }
+        width: 70%;
+       img{
+           width: 35px;
+       }
     }
-    &__politics{
-        display: flex;
-        justify-content: space-between;
-        @media (min-width: $breakpoint-web){
-            width: 80%;
-        }
-    }
-    &__button-up {
-        display: flex;
+    @media (min-width: $breakpoint-web) {
+        height: 20vh;
         flex-direction: row;
-        align-self: center;
-        margin: 10px;
-        border: 0px;
-        background: rgba(255, 255, 255, 0.95);
-        font-weight: bold;
-        a{
-            color: black;
-            text-decoration: none;
+        &__content{
+            border-left: 1px solid rgb(247, 247, 247);
+            height: 6em;
+            padding-left: 2.5em;
+            margin-left: 2.5em;
+            align-self: center;
             display: flex;
-            align-items: center;
-            padding: 3px 10px;
-            img{
-                transform: rotate(-90deg);
-                width: 10px;
-                height: 10px;
-                margin-left: 4px; 
-                @media (min-width: $breakpoint-web){
-                    width: 20px;
-                height: 20px;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        &__logo{
+            width: 10%;
+        }
+       
+        &__button-up {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            right: 0;
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 10px;
+                    height: 10px;
+                    margin-left: .5em;
+                    @media (min-width: $breakpoint-web) {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
+        }
     }
-}
     
-    p{
-        text-align: center;
-    }
 }

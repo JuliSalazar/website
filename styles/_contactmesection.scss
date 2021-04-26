@@ -1,0 +1,38 @@
+.contactMeSection {
+    @media (min-width: $breakpoint-web) {
+        display: flex;
+        height: 20%;
+        justify-content: center;
+        &__form {
+            width: 30%;
+            display: grid;
+            grid-gap: 10px;
+            padding-right: 55px;
+            margin-right: 55px;
+            border-right: 1px solid rgba(247, 247, 247, 0.5);
+            button {
+                justify-self: center;
+            }
+        }
+        &__info {
+            opacity: .8;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-self: center;
+        }
+    }
+}
+.contactInformation {
+    display: flex;
+    h3 {
+        font-family: $ibm-plex;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    img{
+        margin-right: 20px;
+    }
+}

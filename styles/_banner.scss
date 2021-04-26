@@ -3,37 +3,47 @@
     height: 100vh;
     background: linear-gradient(210.51deg, #14145c 19.62%, #04042c 54.04%);
     display: flex;
+
     &__img {
-        
         opacity: 0.8;
+        margin-left: 3%;
     }
-    &__explore{
+    &__explore {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        p{
+        margin-left: 1.5em;
+        p {
             transform: rotate(-90deg);
+            font-family: $ibm-plex;
+            font-weight: 300;
         }
-        img{
+        img {
             margin-top: 50%;
         }
     }
     &__title {
         color: rgba(247, 247, 247, 0.2);
-        font-size: 5rem;
-        font-family: 'Open Sans', sans-serif;
+        font-size: 5.6rem;
+        font-family: "Open Sans", sans-serif;
         line-height: 92.18%;
         font-style: bold;
         font-weight: 800;
+        margin-left: -.3rem;
     }
 
     &__info {
-        position: relative;
-        width: 50%;
-        color: white;
+        position: absolute;
+        right: 0;
         align-self: center;
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
         
     }
 }

@@ -1,0 +1,35 @@
+.aboutMeSection {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  margin: 0 4.5em 0 4.5em;
+  @media (min-width: $breakpoint-web) {
+    &__info {
+      width: 70%;
+      height: 45vh;
+      justify-content: space-around;
+      h2 {
+        font-family: $open-sans;
+        font-weight: 300;
+        line-height: 56px;
+        font-size: 30px;
+        color: #ffffff;
+        opacity: 0.5;
+        margin-bottom: 1em;
+      }
+      p {
+        font-family: $ibm-plex;
+        font-weight: 200;
+        font-size: 18px;
+        margin-bottom: 1em;
+      }
+    }
+    &__img {
+      margin-top: -2%;
+    }
+    &__button {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
