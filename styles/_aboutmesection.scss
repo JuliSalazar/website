@@ -3,6 +3,7 @@
   position: relative;
   justify-content: space-evenly;
   margin: 0 4.5em 0 4.5em;
+  z-index: 25;
   @media (min-width: $breakpoint-web) {
     &__info {
       width: 70%;

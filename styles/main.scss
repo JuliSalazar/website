@@ -55,6 +55,11 @@ button {
     height: 35px;
     font-size: 0.9em;
 }
+button:hover{
+    background-color: $blue-color;
+    color: $violet-color;
+    border: 1px solid $violet-color;
+}
 a {
     color: white;
     font-family: $ibm-plex;
@@ -135,7 +140,7 @@ p {
 .aboutMeDecoration {
     width: 100%;
     height: 70vh;
-    z-index: -1;
+    z-index: -5;
     margin: -5em 0 -10em;
     background-image: url("../src/images/aboutMePlanets.png");
     background-position: center;
