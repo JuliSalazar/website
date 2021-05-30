@@ -8,13 +8,18 @@ $fontsize-web: 17px;
     position: relative;
     margin: 8em $padding-right 0 $padding-left;
     &__social {
+        
         display: flex;
         justify-content: space-between;
         width: 70%;
        img{
            width: 35px;
        }
+       a:hover{
+        opacity: 0.2;
+       }
     }
+    
     @media (min-width: $breakpoint-web) {
         height: 20vh;
         flex-direction: row;

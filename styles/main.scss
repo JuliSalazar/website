@@ -12,7 +12,7 @@ $open-sans: "Open Sans", sans-serif;
 $ibm-plex: "IBM Plex Sans", sans-serif;
 $section-title-spacing-top: -0.4em;
 $section-title-spacing-left: 1em;
-$padding-left:4.5em;
+$padding-left: 4.5em;
 $padding-right: 4em;
 
 html,
@@ -55,7 +55,7 @@ button {
     height: 35px;
     font-size: 0.9em;
 }
-button:hover{
+button:hover {
     background-color: $blue-color;
     color: $violet-color;
     border: 1px solid $violet-color;
@@ -145,7 +145,7 @@ p {
     background-image: url("../src/images/aboutMePlanets.png");
     background-position: center;
     background-size: cover;
-    opacity: .8;
+    opacity: 0.8;
 }
 .contactDecoration {
     position: absolute;
@@ -155,7 +155,7 @@ p {
     bottom: 0;
     background-image: url("../src/images/contactPlanets.png");
     background-position: center;
-    opacity: .8;
+    opacity: 0.8;
 }
 .bgGalaxy {
     position: absolute;
@@ -182,6 +182,17 @@ p {
         position: absolute;
         bottom: 0;
         width: 100%;
+    }
+}
+
+.projectDetailSection {
+    padding-top: 7%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        align-self: center;
+        margin: -2px;
     }
 }
 
