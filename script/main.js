@@ -4,11 +4,10 @@
 var headerNav = document.querySelector('.header__nav');
 var iconMenu = document.querySelector('.icon-menu');
 var handleMenuClick = function () {
-
     headerNav.classList.toggle('header__nav--mobile');
     iconMenu.classList.toggle("icon-menu--open");
 }
-//iconMenu.addEventListener('click', handleMenuClick);
+iconMenu.addEventListener('click', handleMenuClick);
 
 function handleWindowResize() {
     if (window.innerWidth > 400) {
@@ -19,8 +18,8 @@ function handleWindowResize() {
 
     }
 }
-window.addEventListener('resize', handleWindowResize);
-window.addEventListener('load', handleWindowResize);
+/* window.addEventListener('resize', handleWindowResize);
+window.addEventListener('load', handleWindowResize); */
 
 
 var firebaseConfig = {
@@ -71,6 +70,5 @@ const loadProject = () => {
 
 window.addEventListener('load', () => {
     loadProject();
-    
     createProjectCards('https://portfolio-430e6-default-rtdb.firebaseio.com/projects.json');
     });

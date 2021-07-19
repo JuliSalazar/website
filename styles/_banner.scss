@@ -1,49 +1,86 @@
 .banner {
-    padding-top: 5%;
     height: 100vh;
     background: linear-gradient(210.51deg, #14145c 19.62%, #04042c 54.04%);
     display: flex;
+    @media (min-width: $breakpoint-web) {
+        padding-top: 5%;
+    }
 
     &__img {
         opacity: 0.8;
-        margin-left: 3%;
+        width: 100%;
+        transform: scale(0.8);
+        @media (min-width: $breakpoint-web) {
+            margin-left: 3%;
+            transform: scale(1);
+        }
     }
     &__explore {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        margin-left: 1.5em;
-        p {
-            transform: rotate(-90deg);
-            font-family: $ibm-plex;
-            font-weight: 300;
-        }
-        img {
-            margin-top: 50%;
+        display: none;
+        @media (min-width: $breakpoint-web) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: 1.5em;
+            p {
+                transform: rotate(-90deg);
+                font-family: $ibm-plex;
+                font-weight: 300;
+            }
+            img {
+                margin-top: 50%;
+            }
         }
     }
     &__title {
         color: rgba(247, 247, 247, 0.2);
-        font-size: 5.6rem;
         font-family: "Open Sans", sans-serif;
-        line-height: 92.18%;
         font-style: bold;
+        line-height: 92.18%;
+        font-size: 2.3rem;
         font-weight: 800;
-        margin-left: -.3rem;
+        @media (min-width: $breakpoint-web) {
+            margin-left: -0.3rem;
+            font-size: 5.6rem;
+        }
     }
 
     &__info {
         position: absolute;
-        right: 0;
-        align-self: center;
-        width: 50vw;
-        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         color: white;
-        
+        align-self: flex-end;
+        height: 45vh;
+        width: 80vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        button {
+            width: 100%;
+            align-self: center;
+        }
+
+        @media (min-width: $breakpoint-web) {
+            align-self: center;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+       img{
+           width: 35px;
+       }
+       a:hover{
+        opacity: 0.2;
+       }
     }
 }

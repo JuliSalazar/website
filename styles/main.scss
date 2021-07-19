@@ -101,31 +101,41 @@ p {
         font-family: $open-sans;
         font-style: normal;
         font-weight: 800;
-        font-size: 120px;
         line-height: 84.18%;
         opacity: 0.8;
         color: transparent;
+        font-size: 50px;
         -webkit-text-stroke: 1px rgba(114, 197, 228, 0.4);
+        @media (min-width: $breakpoint-web) {
+            font-size: 120px;
+        }
     }
     h2 {
         font-weight: bold;
-        font-size: 72px;
-        line-height: 94px;
         color: rgba(247, 247, 247, 0.8);
+        font-size: 45px;
         margin-top: $section-title-spacing-top;
-        margin-left: $section-title-spacing-left;
+        margin-left: 0.6em;
+        @media (min-width: $breakpoint-web) {
+            margin-left: $section-title-spacing-left;
+            line-height: 94px;
+            font-size: 72px;
+        }
     }
     h3 {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 31px;
-        text-align: right;
-        text-transform: none;
-        color: #ffffff;
-        opacity: 0.5;
-        margin-top: -2em;
-        margin-right: 4.5em;
+        display: none;
+        @media (min-width: $breakpoint-web) {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 31px;
+            text-align: right;
+            text-transform: none;
+            color: #ffffff;
+            opacity: 0.5;
+            margin-top: -2em;
+            margin-right: 4.5em;
+        }
     }
 }
 
@@ -170,19 +180,30 @@ p {
     background-size: cover;
 }
 .bannerDecoration {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding-top: 5%;
-    &__planets {
+    display: none;
+    @media (min-width: $breakpoint-web) {
         position: absolute;
-        right: 0;
-    }
-    &__stars {
-        position: absolute;
-        bottom: 0;
         width: 100%;
+        height: 100vh;
+        padding-top: 5%;
+        &__planets {
+            position: absolute;
+            right: 0;
+        }
+        &__stars {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     }
+}
+.bannerDecorationMobile {
+    position: absolute;
+    background-image: url(../src/images/decorationMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100%;
 }
 
 .projectDetailSection {
@@ -202,9 +223,3 @@ p {
 @import "footer";
 @import "aboutmesection";
 @import "contactmesection";
-/*@import 'aptitudes';
-@import 'gallery';
-@import 'project';
-@import 'ad';
-@import 'newsletter';
-  */
