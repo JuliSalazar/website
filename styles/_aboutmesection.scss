@@ -1,10 +1,20 @@
 .aboutMeSection {
   display: flex;
   position: relative;
-  justify-content: space-evenly;
-  margin: 0 4.5em 0 4.5em;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70vh;
+  margin: 0 auto;
   z-index: 25;
+  width: 90%;
+  align-items: center;
+  &__img{
+    img{
+      width: 100%;
+    }
+  }
   @media (min-width: $breakpoint-web) {
+  //  margin: 0 4.5em 0 4.5em;
     &__info {
       width: 70%;
       height: 45vh;

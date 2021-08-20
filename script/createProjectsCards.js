@@ -33,12 +33,12 @@ class ProjectCard {
 
 
         const thumbnailContainer = document.createElement('div');
-        thumbnailContainer.classList.add('project__thumbnail');
+        thumbnailContainer.classList.add('latestProjects__thumbnail');
         cardArticle.appendChild(thumbnailContainer);
 
         const thumbnailImg = document.createElement('img');
         thumbnailImg.setAttribute('src', this.data.thumbnail);
-        cardArticle.appendChild(thumbnailImg);
+        thumbnailContainer.appendChild(thumbnailImg);
 
         container.addEventListener('click', () => {
             window.location.href = './project.html?id='+this.index;

@@ -141,31 +141,47 @@ p {
 
 .projectDecoration {
     width: 100%;
-    height: 40vh;
     z-index: -1;
+    margin: -4em 0 -2em;
+    height: 15vh;
     background-image: url("../src/images/planetsProject.png");
-    background-position: center;
+    background-position: right;
     background-size: cover;
+    @media (min-width: $breakpoint-web) {
+        margin: -5em 0 -10em;
+        background-position: center;
+        height: 40vh;
+    }
 }
 .aboutMeDecoration {
     width: 100%;
-    height: 70vh;
+    height: 30vh;
     z-index: -5;
-    margin: -5em 0 -10em;
     background-image: url("../src/images/aboutMePlanets.png");
-    background-position: center;
     background-size: cover;
+    margin: -1em 0 -2em;
     opacity: 0.8;
+    @media (min-width: $breakpoint-web) {
+        margin: -5em 0 -10em;
+        background-position: center;
+        height: 70vh;
+    }
 }
 .contactDecoration {
     position: absolute;
     width: 100%;
-    height: 90vh;
+    min-height: 55vh;
     z-index: -1;
-    bottom: 0;
+    margin: -8em auto;
     background-image: url("../src/images/contactPlanets.png");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0.8;
+    @media (min-width: $breakpoint-web) {
+        background-position: center;
+        height: 90vh;
+    }
 }
 .bgGalaxy {
     position: absolute;

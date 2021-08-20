@@ -4,25 +4,37 @@ $fontsize-web: 17px;
     display: flex;
     flex-direction: column;
     opacity: .4;
-    padding-bottom: 3em;
-    position: relative;
-    margin: 8em $padding-right 0 $padding-left;
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    &__content{
+        align-self: center;
+        p{
+            margin: 20px auto;
+        }
+    }
     &__social {
-        
         display: flex;
         justify-content: space-between;
-        width: 70%;
-       img{
-           width: 35px;
-       }
+        width: 80%;
+        margin: 0 auto;
+       
        a:hover{
         opacity: 0.2;
        }
     }
-    
+    &__logo{
+        max-width: 50%;
+    align-self: center;
+    }
+    &__buttonUp{
+        display: none;
+    }
     @media (min-width: $breakpoint-web) {
         height: 20vh;
         flex-direction: row;
+        margin: 8em $padding-right 0 $padding-left;
+        padding-bottom: 3em;
         &__content{
             border-left: 1px solid rgb(247, 247, 247);
             height: 6em;
@@ -37,7 +49,7 @@ $fontsize-web: 17px;
             width: 10%;
         }
        
-        &__button-up {
+        &__buttonUp {
             position: absolute;
             display: flex;
             flex-direction: row;
@@ -51,10 +63,6 @@ $fontsize-web: 17px;
                     width: 10px;
                     height: 10px;
                     margin-left: .5em;
-                    @media (min-width: $breakpoint-web) {
-                        width: 20px;
-                        height: 20px;
-                    }
                 }
             }
         }
