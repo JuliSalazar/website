@@ -34,7 +34,6 @@ $fontsize-web: 17px;
         height: 20vh;
         flex-direction: row;
         margin: 8em $padding-right 0 $padding-left;
-        padding-bottom: 3em;
         &__content{
             border-left: 1px solid rgb(247, 247, 247);
             height: 6em;
@@ -54,7 +53,7 @@ $fontsize-web: 17px;
             display: flex;
             flex-direction: row;
             align-self: center;
-            right: 0;
+            right:8%;
             a {
                 text-decoration: none;
                 display: flex;

@@ -223,7 +223,6 @@ p {
 @media (min-width: 1024px) {
   .contactDecoration {
     background-position: center;
-    height: 90vh;
   }
 }
 
@@ -247,6 +246,7 @@ p {
 @media (min-width: 1024px) {
   .bannerDecoration {
     position: absolute;
+    display: block;
     width: 100%;
     height: 100vh;
     padding-top: 5%;
@@ -269,6 +269,12 @@ p {
   background-size: contain;
   width: 100vw;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .bannerDecorationMobile {
+    display: none;
+  }
 }
 
 .projectDetailSection {
@@ -301,6 +307,12 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 10px 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 4em 0 4.5em;
+  }
 }
 
 .header__logo {
@@ -337,10 +349,10 @@ p {
 
 @media (min-width: 1024px) {
   .header__nav {
+    display: block;
     width: 100%;
     text-align: right;
     background: transparent;
-    position: absolute;
     padding-top: 0px;
     margin-right: 0 auto;
   }
@@ -360,6 +372,10 @@ p {
     display: inline-block;
     border-bottom: 0px;
   }
+}
+
+.header__link:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .icon-menu {
@@ -413,16 +429,26 @@ p {
 
 .banner__img {
   opacity: 0.8;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
+.banner__img img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 1024px) {
   .banner__img {
-    margin-left: 3%;
+    width: auto;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  .banner__img img {
+    width: 100%;
   }
 }
 
@@ -471,7 +497,14 @@ p {
 @media (min-width: 1024px) {
   .banner__title {
     margin-left: -0.3rem;
-    font-size: 5.6rem;
+    font-size: 4.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner__title {
+    margin-left: -0.3rem;
+    font-size: 6rem;
   }
 }
 
@@ -509,9 +542,13 @@ p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    position: relative;
     right: 0;
     width: 50vw;
     height: 50vh;
+  }
+  .banner__info button {
+    width: 120px;
   }
 }
 
@@ -531,6 +568,22 @@ p {
 
 .banner__social a:hover {
   opacity: 0.2;
+}
+
+@media (min-width: 1024px) {
+  .banner__social {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    right: 1.5em;
+    bottom: 1em;
+    height: 30vh;
+  }
 }
 
 .latestProjects {
@@ -556,7 +609,6 @@ p {
 .latestProjects__article {
   position: relative;
   z-index: 1;
-  height: 100%;
 }
 
 .latestProjects__article:before {
@@ -634,7 +686,6 @@ p {
 
 @media (min-width: 1024px) {
   .latestProjects {
-    height: 95vh;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -666,8 +717,6 @@ p {
     opacity: 1;
   }
   .latestProjects__a {
-    width: 27%;
-    height: 298px;
     position: relative;
   }
   .latestProjects__a img {
@@ -738,7 +787,6 @@ p {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 8em 4em 0 4.5em;
-    padding-bottom: 3em;
   }
   .footer__content {
     border-left: 1px solid #f7f7f7;
@@ -772,7 +820,7 @@ p {
             flex-direction: row;
     -ms-flex-item-align: center;
         align-self: center;
-    right: 0;
+    right: 8%;
   }
   .footer__buttonUp a {
     text-decoration: none;
@@ -802,7 +850,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70vh;
   margin: 0 auto;
   z-index: 25;
   width: 90%;
@@ -811,11 +858,22 @@ p {
           align-items: center;
 }
 
+.aboutMeSection__img {
+  margin-bottom: 30px;
+}
+
 .aboutMeSection__img img {
+  margin-top: -30px;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
+  .aboutMeSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .aboutMeSection__info {
     width: 70%;
     height: 45vh;
@@ -842,6 +900,7 @@ p {
   }
   .aboutMeSection__button {
     position: absolute;
+    right: 45%;
     bottom: 0;
   }
 }
@@ -859,7 +918,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -909,13 +967,14 @@ p {
             justify-content: center;
   }
   .contactMeSection__form {
-    width: 30%;
+    width: 50%;
     display: -ms-grid;
     display: grid;
     grid-gap: 10px;
     padding-right: 55px;
     margin-right: 55px;
     border-right: 1px solid rgba(247, 247, 247, 0.5);
+    border-bottom: none;
   }
   .contactMeSection__form button {
     -ms-grid-column-align: center;

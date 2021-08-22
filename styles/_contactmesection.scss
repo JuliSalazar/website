@@ -4,7 +4,6 @@
     width: 90%;
     margin: 0 auto;
     align-items: center;
-    height: 70vh;
     justify-content: space-evenly;
     &__form {
         display: grid;
@@ -30,12 +29,13 @@
         height: 20%;
         justify-content: center;
         &__form {
-            width: 30%;
+            width: 50%;
             display: grid;
             grid-gap: 10px;
             padding-right: 55px;
             margin-right: 55px;
             border-right: 1px solid rgba(247, 247, 247, 0.5);
+            border-bottom: none;
             button {
                 justify-self: center;
             }
