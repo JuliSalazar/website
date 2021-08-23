@@ -583,6 +583,13 @@ p {
     right: 1.5em;
     bottom: 1em;
     height: 30vh;
+    width: 3%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-a {
+    width: 120px;
   }
 }
 
