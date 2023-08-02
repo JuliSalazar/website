@@ -477,9 +477,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   color: white;
+  justify-content: center;
   text-decoration: none;
   margin: 0 auto;
-  justify-content: space-between;
 }
 .latestProjects__a {
   margin-bottom: 5vh;
@@ -548,7 +548,7 @@ p {
 }
 @media (min-width: 1024px) {
   .latestProjects {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .latestProjects__article:hover img {
     transform: scale(1.2);

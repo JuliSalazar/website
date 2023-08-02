@@ -4,9 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   color: white;
+  justify-content: center;
   text-decoration: none;
   margin: 0 auto;
-  justify-content: space-between;
   &__a {
     margin-bottom: 5vh;
   }
@@ -80,7 +80,7 @@
     }
   }
   @media (min-width: $breakpoint-web) {
-    justify-content: space-evenly;
+    justify-content: space-around;
     &__article {
       &:hover {
         img {

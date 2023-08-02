@@ -58,7 +58,6 @@ const loadProject = () => {
     .then(response => response.json())
     .then(projects => {
         const projectContainer = document.querySelector('.projectDetailSection');
-        console.log(projects);
         const currentProject = projects[parseInt(urlParams.get('id'))];
         currentProject.images.forEach(image => {
             const img = document.createElement('img');
